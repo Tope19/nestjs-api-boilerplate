@@ -9,8 +9,8 @@ async function bootstrap() {
 
   if (process.env.NODE_ENV !== 'production') {
     const options = new DocumentBuilder()
-      .setTitle('ZA DUMMY CORE')
-      .setDescription('Zummit Africa Dummy Core BackEnd')
+      .setTitle('NestJS Api')
+      .setDescription('NestJS Api Boilerplate')
       .setVersion('1.0')
       .addBearerAuth()
       .build();
