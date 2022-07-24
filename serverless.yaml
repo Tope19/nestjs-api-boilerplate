@@ -1,0 +1,43 @@
+service:nestjs-api-boilerplate
+
+useDotenv: true
+
+plugins:
+  - serverless-offline
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  environment:
+    TYPEORM_PORT: ${env:TYPEORM_PORT}
+    TYPEORM_SYNCHRONIZE: ${env:TYPEORM_SYNCHRONIZE}
+    TYPEORM_LOGGING: ${env:TYPEORM_LOGGING}
+    TYPEORM_ENTITIES: ${env:TYPEORM_ENTITIES}
+    TYPEORM_ENTITIES_DIR: ${env:TYPEORM_ENTITIES_DIR}
+    TYPEORM_MIGRATIONS: ${env:TYPEORM_MIGRATIONS}
+    TYPEORM_MIGRATIONS_DIR: ${env:TYPEORM_MIGRATIONS_DIR}
+    TYPEORM_SUBSCRIBERS: ${env:TYPEORM_SUBSCRIBERS}
+    TYPEORM_SUBSCRIBERS_DIR: ${env:TYPEORM_SUBSCRIBERS_DIR}
+
+    DATABASE_HOST: ${env:DATABASE_HOST}
+    DATABASE_PORT: ${env:DATABASE_PORT}
+    DATABASE_USERNAME: ${env:DATABASE_USERNAME}
+    DATABASE_PASSWORD: ${env:DATABASE_PASSWORD}
+    DATABASE_NAME: ${env:DATABASE_NAME}
+
+    TYPEORM_CONNECTION: ${env:TYPEORM_CONNECTION}
+    TYPEORM_HOST: ${env:TYPEORM_HOST}
+    TYPEORM_USERNAME: ${env:TYPEORM_USERNAME}
+    TYPEORM_PASSWORD: ${env:TYPEORM_PASSWORD}
+    TYPEORM_DATABASE: ${env:TYPEORM_DATABASE}
+
+functions:
+  main:
+    handler: dist/serverless.handler
+    events:
+      - http:
+          method: ANY
+          path: /
+      - http:
+          method: ANY
+          path: '{proxy+}'
