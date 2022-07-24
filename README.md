@@ -25,6 +25,5 @@ Built with NestJS and TypeScript
 5. The upcoming version will include full authentication procedures, which will help to cut down on development time.
 
 ***
-You are more than welcome to contribute to the application1
-Cheers
-### Tope
+### You are more than welcome to contribute to the application!
+
