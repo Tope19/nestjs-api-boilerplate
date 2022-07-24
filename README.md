@@ -16,7 +16,7 @@ Built with NestJS and TypeScript
 
 1. You may save the hassle of setting up Swagger on your Application because this Application already has Inbuilt SwaggerAPi.
 
-2. It includes a CRUD example to let you design your own for each entity, such as a guard, service, controller, etc.
+2. It includes a CRUD example to let you design your own for each entity, guard, service, controller, etc.
 
 3. You only need to copy the env.example file and change it with your  information and chosen TypeOrm DB Connection because TypeOrm Config is already configured by default to use POSTGRESQL.
 
