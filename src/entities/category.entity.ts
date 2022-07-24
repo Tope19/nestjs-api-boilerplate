@@ -1,5 +1,5 @@
 import { SharedEntity } from '../common/model/sharedEntity';
-import { Column, Entity, OneToMany } from 'typeorm';
+import { Column, Entity } from 'typeorm';
 import { ApiProperty } from '@nestjs/swagger';
 
 @Entity()
