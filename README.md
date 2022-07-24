@@ -8,10 +8,11 @@ Built with NestJS and TypeScript
 4. run `npm run build` to create a production build.
 5. Run the server in development mode `npm run start:dev`.
 6. Run the server in producttion mode `npm run start:prod`.
-7. Create a Database Migration file `npm run typeorm migration:generate ./src/database/migration/${file name}`.
-8. Revert a Database Migrattion file `npm run typeorm migration:revert`
-9. Migrate the database `npm run typeorm migration:run`
-10. Swagger Api Doc Url `localhost:3000/api-doc`
+7. Create a Database Migration file `npm run typeorm migration:create ./src/database/migration/${file name}`.
+8. To Generate a Database Migration File from your Entity Schema `npm run typeorm migration:generate ./src/database/migration/${file name}`.
+9. Revert a Database Migrattion file `npm run typeorm migration:revert`
+10. Migrate the database `npm run typeorm migration:run`
+11. Swagger Api Doc Url `localhost:3000/api-doc`
 
 # Some Features of the Application
 
