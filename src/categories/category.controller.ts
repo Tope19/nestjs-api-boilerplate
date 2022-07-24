@@ -16,8 +16,6 @@ import { CategoryService } from './category.service';
 import { Category } from '../entities/category.entity';
 import { CreateCategoriesDto } from './dto/categories.dto';
 import { ApiOperation, ApiTags } from '@nestjs/swagger';
-import { CategoryIdGuard } from './category-id.guard';
-import { Categories } from 'src/common/decorators/categories.decorator';
 
 @ApiTags('Categories')
 @Controller('categories')
@@ -54,11 +52,5 @@ export class CategoryController {
   async findOneById(@Param('id', new ParseUUIDPipe()) id: string) {
     const category = await this.categoryservice.findOneById(id);
     return ApiResponse.Ok(category, 'Ok', '200');
-  }
-
-  @Get('/test/:categoryId')
-  @Categories('category')
-  async createCategoryId() {
-    return 'testing';
   }
 }
