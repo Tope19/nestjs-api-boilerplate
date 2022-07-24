@@ -11,6 +11,7 @@ Built with NestJS and TypeScript
 7. Create a Database Migration file `npm run typeorm migration:generate ./src/database/migration/${file name}`.
 8. Revert a Database Migrattion file `npm run typeorm migration:revert`
 9. Migrate the database `npm run typeorm migration:run`
+10. Swagger Api Doc Url `localhost:3000/api-doc`
 
 # Some Features of the Application
 
