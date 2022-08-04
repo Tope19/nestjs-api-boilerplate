@@ -24,7 +24,7 @@ Built with NestJS and TypeScript
 
 4. The application also makes an effort to adhere to best practices for code structure and will continually be enhanced to ensure code readability.
 
-5. The upcoming version will include full authentication procedures, which will help to cut down on development time.
+5. The application comes with full authentication procedures, which will help to cut down on development time. The Upcoming Version will include Social Login Authentication with Google.
 
 ***
 ### You are more than welcome to contribute to the application!
