@@ -1,7 +1,6 @@
 import { ConfigModule } from '@nestjs/config';
 import { DataSource } from 'typeorm';
 
-
 ConfigModule.forRoot();
 
 export const AppDataSource = new DataSource({
